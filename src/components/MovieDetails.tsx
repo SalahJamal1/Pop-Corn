@@ -30,7 +30,7 @@ export default function MovieDetails() {
   useEffect(() => {
     if (title) document.title = title;
     return () => {
-      document.title = "usePopcorn";
+      document.title = "Pop Corn";
     };
   }, [title]);
   useEffect(() => {
