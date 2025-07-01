@@ -1,4 +1,4 @@
-const apiUrl = "http://www.omdbapi.com/?apikey=";
+const apiUrl = "https://www.omdbapi.com/?apikey=";
 const key = "53f9eba3";
 
 export async function apiMovies(
