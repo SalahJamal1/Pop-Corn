@@ -4,7 +4,7 @@ export default function Summary() {
   const { watched } = useMovies()!;
   const average = (arr: number[]): number =>
     arr.reduce(
-      (acc: number, cur: number, i: number, arr) => acc + cur / arr.length,
+      (acc: number, cur: number, _i: number, arr) => acc + cur / arr.length,
       0
     );
   const avgImdbRating: number =
