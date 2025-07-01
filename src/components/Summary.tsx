@@ -3,10 +3,8 @@ import { useMovies } from "../hooks/useMovies";
 export default function Summary() {
   const { watched } = useMovies()!;
   const average = (arr: number[]): number =>
-    arr.reduce(
-      (acc: number, cur: number, _i: number, arr) => acc + cur / arr.length,
-      0
-    );
+    arr.reduce((acc, cur, _i, arr) => acc + cur / arr.length, 0);
+
   const avgImdbRating: number =
     Math.round(average(watched.map((MovieType) => MovieType.imdbRating)) * 10) /
     10;
