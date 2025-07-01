@@ -7,7 +7,6 @@ export async function apiMovies(
 ) {
   const res = await fetch(`${apiUrl}${key}&s=${query}`, {
     signal: abortController.signal,
-    credentials: "include",
   });
   const data = await res.json();
   return data;
@@ -18,7 +17,6 @@ export async function apiMovie(
 ) {
   const res = await fetch(`${apiUrl}${key}&i=${select}`, {
     signal: abortController.signal,
-    credentials: "include",
   });
   const data = await res.json();
   return data;
